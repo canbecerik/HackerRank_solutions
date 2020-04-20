@@ -11,6 +11,7 @@ I include pdf versions of the challenges as well, as I would like to keep copies
 All directories & assignments are numbered so that they are in the same order as they are in HackerRank.
 
 You can find my HackerRank profile [here.](https://www.hackerrank.com/canbecerik?hr_r=1)
+
 You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik/)
 
 ## Completed assignments:
@@ -21,12 +22,12 @@ You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik
 
 Current progress is in parantheses, I aim to complete all challenges eventually.
 
-*C (4 stars)
-*C++ (3 stars)
-*Python (4 stars)
-*SQL (2 stars)
-*Problem Solving (1 star)
+* C (4 stars)
+* C++ (3 stars)
+* Python (4 stars)
+* SQL (2 stars)
+* Problem Solving (1 star)
 
 Future Plans:
 
-*10 Days of JavaScript
+* 10 Days of JavaScript
