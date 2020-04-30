@@ -25,7 +25,7 @@ Current progress is in parantheses, I aim to complete all challenges eventually.
 * C (4 stars)
 * C++ (3 stars)
 * Python (4 stars)
-* SQL (3 stars)
+* SQL (4 stars)
 * Problem Solving (1 star)
 
 Future Plans:
