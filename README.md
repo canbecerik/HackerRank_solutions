@@ -14,18 +14,15 @@ You can find my HackerRank profile [here.](https://www.hackerrank.com/canbecerik
 
 You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik/)
 
-## Completed assignments:
+## Current Progress
 
-* 30 Days of Code
+Challenge | Progress | Completed?
+----------|----------|-----------|
+30 Days of Coding | :star::star::star::star::star: | Yes
+10 Days of JavaScript | 1/10 | WIP
+C | :star::star::star::star: | No
+C++ | :star::star::star: | No
+Python | :star::star::star::star: | No
+SQL | :star::star::star::star: | No
+Problem Solving | :star: | No
 
-## WIP:
-
-Current progress is in parantheses, I aim to complete all challenges eventually.
-
-* 30 Days of Coding (Completed)
-* C (4 stars)
-* C++ (3 stars)
-* Python (4 stars)
-* SQL (4 stars)
-* Problem Solving (1 star)
-* 10 Days of JavaScript (1/10)
