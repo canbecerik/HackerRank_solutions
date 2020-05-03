@@ -22,12 +22,10 @@ You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik
 
 Current progress is in parantheses, I aim to complete all challenges eventually.
 
+* 30 Days of Coding (Completed)
 * C (4 stars)
 * C++ (3 stars)
 * Python (4 stars)
 * SQL (4 stars)
 * Problem Solving (1 star)
-
-Future Plans:
-
-* 10 Days of JavaScript
+* 10 Days of JavaScript (1/10)
