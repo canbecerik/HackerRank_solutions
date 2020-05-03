@@ -16,13 +16,13 @@ You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik
 
 ## Current Progress
 
-Challenge | Progress | Completed?
-----------|----------|-----------|
-30 Days of Coding | :star::star::star::star::star: | Yes
-10 Days of JavaScript | 1/10 | WIP
-C | :star::star::star::star: | No
-C++ | :star::star::star: | No
-Python | :star::star::star::star: | No
-SQL | :star::star::star::star: | No
-Problem Solving | :star: | No
+Challenge | Level | Stars | Progress
+----------|-------|-------|----------|
+30 Days of Coding | Gold | :star::star::star::star::star: | Completed
+10 Days of JavaScript | Bronze | :star: | 1/10
+C | Silver | :star::star::star::star: | 15/25
+C++ | Silver | :star::star::star: | 8/44
+Python | Silver | :star::star::star::star: | 22/115
+SQL | Silver | :star::star::star::star: | 32/58
+Problem Solving | Bronze | :star: | 4/563
 
