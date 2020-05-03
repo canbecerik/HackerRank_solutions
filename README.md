@@ -18,11 +18,11 @@ You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik
 
 Challenge | Level | Stars | Progress
 ----------|-------|-------|----------|
-30 Days of Coding | Gold | :star::star::star::star::star: | Completed
-10 Days of JavaScript | Bronze | :star: | 1/10
-C | Silver | :star::star::star::star: | 15/25
-C++ | Silver | :star::star::star: | 8/44
-Python | Silver | :star::star::star::star: | 22/115
-SQL | Silver | :star::star::star::star: | 32/58
-Problem Solving | Bronze | :star: | 4/563
+30 Days of Coding | Gold | :star::star::star::star::star: | [Completed](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/30_Days_of_Code)
+10 Days of JavaScript | Bronze | :star: | [1/10](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/10_Days_of_JavaScript)
+C | Silver | :star::star::star::star: | [15/25](https://github.com/canbecerik/HackerRank_solutions/blob/master/Language_Proficiency/C)
+C++ | Silver | :star::star::star: | [8/44](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/C%2B%2B)
+Python | Silver | :star::star::star::star: | [22/115](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/Python)
+SQL | Silver | :star::star::star::star: | [32/58](https://github.com/canbecerik/HackerRank_solutions/tree/master/Specialized_Skills/SQL)
+Problem Solving | Bronze | :star: | [4/563](https://github.com/canbecerik/HackerRank_solutions/tree/master/Problem_Solving)
 
