@@ -19,7 +19,7 @@ You can also find me on LinkedIn [here.](https://www.linkedin.com/in/can-becerik
 Challenge | Level | Stars | Progress
 ----------|-------|-------|----------|
 30 Days of Coding | Gold | :star::star::star::star::star: | [Completed](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/30_Days_of_Code)
-10 Days of JavaScript | Gold | :star::star::star::star::star | [10/10](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/10_Days_of_JavaScript)
+10 Days of JavaScript | Gold | :star::star::star::star::star: | [10/10](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/10_Days_of_JavaScript)
 C | Silver | :star::star::star::star: | [15/25](https://github.com/canbecerik/HackerRank_solutions/blob/master/Language_Proficiency/C)
 C++ | Silver | :star::star::star: | [8/44](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/C%2B%2B)
 Python | Silver | :star::star::star::star: | [22/115](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/Python)
