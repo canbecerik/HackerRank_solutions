@@ -53,3 +53,6 @@ Temporary Items
 # vscode
 .vscode
 HackerRank_solutions.code-workspace
+
+# Python
+__pycache__
