@@ -15,10 +15,10 @@ class FilesEventHandler(RegexMatchingEventHandler):
 
         # Do not proceed until file download has been finished
 
-        file_size = -1
-        while file_size != os.path.getsize(event.src_path):
-            file_size = os.path.getsize(event.src_path)
-            time.sleep(1)
+        # file_size = -1
+        # while file_size != os.path.getsize(event.src_path):
+        #     file_size = os.path.getsize(event.src_path)
+        #     time.sleep(1)
         self.process(event)
 
     def process(self, event):
