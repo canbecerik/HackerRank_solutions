@@ -62,6 +62,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         extension = sys.argv[1] if len(sys.argv) > 1 else 'py'
         filename = f"{filename}.{extension}"
         open(filename, 'a').close()
+        print()
         print(f"Created {filename}.")
  
 if __name__ == "__main__":
@@ -70,5 +71,6 @@ if __name__ == "__main__":
         print("Example: watcher.py json")
         exit()
     src_path = sys.argv[2] if len(sys.argv) > 2 else '.'
-    print("Launching Watcher...")
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print("Launching Watcher...\n")
     FilesWatcher(src_path).run()
