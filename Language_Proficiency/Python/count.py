@@ -2,7 +2,7 @@ import os, sys
 
 def file_count(extension, count):
     """Count no of files under current folder with given extension"""
-    for root, dir, files in os.walk(os.getcwd()):
+    for _, _, files in os.walk(os.getcwd()):
         for file in files:
             if file.endswith('.'+extension):
                 count += 1
