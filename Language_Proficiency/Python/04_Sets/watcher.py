@@ -1,10 +1,10 @@
 # Adapted from https://blog.magrathealabs.com/filesystem-events-monitoring-with-python-9f5329b651c3
 
-import sys
+import sys, os
 import time
 
 from watchdog.observers import Observer
-from events import FilesEventHandler
+from watchdog.events import RegexMatchingEventHandler
 
 class FilesWatcher:
     def __init__(self, src_path):
@@ -36,7 +36,36 @@ class FilesWatcher:
             recursive=True
         )
 
+class FilesEventHandler(RegexMatchingEventHandler):
+    """Anytime a pdf is created in script's folder, create an empty file with the same name and given extension as CL argument"""
+    REGEX = [r".*\.pdf$"]
+
+    def __init__(self):
+        super().__init__(self.REGEX)
+
+    def on_created(self, event):
+        print(f"Detected new PDF file{event.src_path}")
+
+        # Do not proceed until file download has been finished
+
+        # file_size = -1
+        # while file_size != os.path.getsize(event.src_path):
+        #     file_size = os.path.getsize(event.src_path)
+        #     time.sleep(1)
+        self.process(event)
+
+    def process(self, event):
+        filename = os.path.splitext(event.src_path)[0]
+        extension = sys.argv[1] if len(sys.argv) > 1 else 'py'
+        filename = f"{filename}.{extension}"
+        open(filename, 'a').close()
+        print(f"Created {filename}.")
+ 
 if __name__ == "__main__":
-    src_path = sys.argv[1] if len(sys.argv) > 1 else '.'
+    if len(sys.argv) == 1:
+        print("Usage: watcher.py <extension> <optional_path>")
+        print("Example: watcher.py json")
+        exit()
+    src_path = sys.argv[2] if len(sys.argv) > 2 else '.'
     print("Launching FilesWatcher, press CTRL+C to terminate.")
     FilesWatcher(src_path).run()
