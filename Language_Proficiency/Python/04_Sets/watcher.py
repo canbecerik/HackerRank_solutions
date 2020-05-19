@@ -14,11 +14,13 @@ class FilesWatcher:
 
     def run(self):
         self.start()
+        print(f"FilesWatcher is now running, will create {sys.argv[1].upper()} files.")
+        print("Press CTRL+C to terminate.")
         try:
             while True:
                 time.sleep(1)
         except KeyboardInterrupt:
-            print("Received CTRL+C, terminate.")
+            print("Received CTRL+C, terminating...")
             self.stop()
 
     def start(self):
@@ -28,6 +30,7 @@ class FilesWatcher:
     def stop(self):
         self.__event_observer.stop()
         self.__event_observer.join()
+        print("Watcher terminated.")
 
     def __schedule(self):
         self.__event_observer.schedule(
@@ -67,5 +70,5 @@ if __name__ == "__main__":
         print("Example: watcher.py json")
         exit()
     src_path = sys.argv[2] if len(sys.argv) > 2 else '.'
-    print("Launching FilesWatcher, press CTRL+C to terminate.")
+    print("Launching Watcher...")
     FilesWatcher(src_path).run()
