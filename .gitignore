@@ -55,3 +55,10 @@ HackerRank_solutions.code-workspace
 .vscode/.ropeproject/config.py
 .vscode/.ropeproject/objectdb
 Language_Proficiency/Python/04_Sets/__pycache__/events.cpython-38.pyc
+
+# vscode
+.vscode
+HackerRank_solutions.code-workspace
+
+# Python
+__pycache__
