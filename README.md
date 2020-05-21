@@ -20,7 +20,7 @@ Challenge | Level | Stars | Progress
 ----------|-------|-------|----------|
 30 Days of Coding | Gold | :star::star::star::star::star: | [Completed](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/30_Days_of_Code)
 10 Days of JavaScript | Gold | :star::star::star::star::star: | [Completed](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/10_Days_of_Javascript)
-C | Silver | :star::star::star::star: | [16/25](https://github.com/canbecerik/HackerRank_solutions/blob/master/Language_Proficiency/C)
+C | Silver | :star::star::star::star: | [17/25](https://github.com/canbecerik/HackerRank_solutions/blob/master/Language_Proficiency/C)
 C++ | Silver | :star::star::star: | [8/44](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/C%2B%2B)
 Python | Gold | :star::star::star::star::star: | [37/115](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/Python)
 SQL | Silver | :star::star::star::star: | [32/58](https://github.com/canbecerik/HackerRank_solutions/tree/master/Specialized_Skills/SQL)
