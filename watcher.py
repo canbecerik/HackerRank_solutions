@@ -48,7 +48,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         super().__init__(self.REGEX)
 
     def on_created(self, event):
-        print(f"Detected new PDF file{event.src_path}")
+        print(f"\nDetected new PDF file:\n{event.src_path}")
 
         # Do not proceed until file download has been finished
 
