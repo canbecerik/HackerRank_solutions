@@ -16,7 +16,7 @@ def main():
     else:
         extension = sys.argv[1]
     if extension == "py":
-        count = -2 # Ignore watcher.py and count.py
+        count = -1 # Ignore count.py
     number = file_count(extension, count)
     print(f"There are {number} {extension} files.")
 
