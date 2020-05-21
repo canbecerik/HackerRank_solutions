@@ -14,7 +14,8 @@ class FilesWatcher:
 
     def run(self):
         self.start()
-        print(f"FilesWatcher is now running, will create {sys.argv[1].upper()} files.")
+        print(f"FilesWatcher is now running, will create {curr_extension.upper()} files.")
+        # print(f"FilesWatcher is now running, will create {sys.argv[1].upper()} files.")
         print("Press CTRL+C to terminate.")
         try:
             while True:
@@ -47,7 +48,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         super().__init__(self.REGEX)
 
     def on_created(self, event):
-        print(f"Detected new PDF file{event.src_path}")
+        print(f"\nDetected new PDF file:\n{event.src_path}")
 
         # Do not proceed until file download has been finished
 
@@ -59,18 +60,38 @@ class FilesEventHandler(RegexMatchingEventHandler):
 
     def process(self, event):
         filename = os.path.splitext(event.src_path)[0]
-        extension = sys.argv[1] if len(sys.argv) > 1 else 'py'
+        # extension = sys.argv[1] if len(sys.argv) > 1 else 'py'
+        extension = curr_extension.lower()
         filename = f"{filename}.{extension}"
         open(filename, 'a').close()
         print()
         print(f"Created {filename}.")
  
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        print("Usage: watcher.py <extension> <optional_path>")
-        print("Example: watcher.py json")
-        exit()
-    src_path = sys.argv[2] if len(sys.argv) > 2 else '.'
+    # if len(sys.argv) == 1:
+    #     print("Usage: watcher.py <extension> <optional_path>")
+    #     print("Example: watcher.py json")
+    #     exit()
+    # src_path = sys.argv[2] if len(sys.argv) > 2 else '.'
     os.system('cls' if os.name == 'nt' else 'clear')
+    # Get required configuration
+    allowed_extensions = {
+        "SQL" : {"extension" : 'SQL', "path": "Specialized_Skills\SQL"},
+        "PY" : {"extension" : 'PY', "path": "Language_Proficiency\Python"},
+        "C" : {"extension" : 'C', "path": "Language_Proficiency\C"},
+        "CPP" : {"extension" : 'CPP', "path": "Language_Proficiency\C++"}
+    }
+        
+    curr_extension = input("Enter extension: ").upper()
+    # src_path = ('.' if src_path == "" else src_path)
+    if curr_extension not in allowed_extensions:
+        print("Error: extension not supported. Supported extensions are:")
+        [print(i) for i in allowed_extensions]
+        print()
+        print("Terminating watcher...")
+        exit()
+    else:
+        src_path = allowed_extensions[curr_extension]["path"]
+
     print("Launching Watcher...\n")
     FilesWatcher(src_path).run()
