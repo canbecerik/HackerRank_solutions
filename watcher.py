@@ -1,6 +1,6 @@
 # Adapted from https://blog.magrathealabs.com/filesystem-events-monitoring-with-python-9f5329b651c3
 
-import sys, os
+import sys, os, subprocess
 import time
 
 from watchdog.observers import Observer
@@ -66,7 +66,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         open(filename, 'a').close()
         print()
         print(f"Created {filename}.")
-        os.system(filename)
+        subprocess.Popen(filename, shell=True)
  
 if __name__ == "__main__":
     # if len(sys.argv) == 1:
