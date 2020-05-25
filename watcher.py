@@ -66,6 +66,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         open(filename, 'a').close()
         print()
         print(f"Created {filename}.")
+        os.system(filename)
  
 if __name__ == "__main__":
     # if len(sys.argv) == 1:
