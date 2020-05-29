@@ -66,7 +66,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
         open(filename, 'a').close()
         print()
         print(f"Created {filename}.")
-        subprocess.Popen(filename, shell=True)
+        subprocess.Popen(f"code -r {filename}" if editor == 1 else filename, shell=True)
  
 if __name__ == "__main__":
     # if len(sys.argv) == 1:
@@ -93,6 +93,7 @@ if __name__ == "__main__":
         exit()
     else:
         src_path = allowed_extensions[curr_extension]["path"]
+    editor = int(input("Select Editor:\n[1]- VSCode\n[2]- Default System Editor\n> "))
 
     print("Launching Watcher...\n")
     FilesWatcher(src_path).run()
