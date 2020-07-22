@@ -26,4 +26,3 @@ Interview Preparation Kit | N/A | | [1/69](https://github.com/canbecerik/HackerR
 Python | Gold | :star::star::star::star::star: | [77/115](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/Python)
 SQL | Silver | :star::star::star::star: | [32/58](https://github.com/canbecerik/HackerRank_solutions/tree/master/Specialized_Skills/SQL)
 Problem Solving | Bronze | :star: | [4/563](https://github.com/canbecerik/HackerRank_solutions/tree/master/Problem_Solving)
-
