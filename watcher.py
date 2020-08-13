@@ -17,7 +17,7 @@ class FilesWatcher:
     def run(self):
         self.start()
         print(
-            f"FilesWatcher is now running, will create {curr_extension.upper()} files.")
+            f"FilesWatcher is now running, will create {allowed_extensions[curr_extension]['extension'].upper()} files.")
         # print(f"FilesWatcher is now running, will create {sys.argv[1].upper()} files.")
         print("Press CTRL+C to terminate.")
         try:
@@ -65,7 +65,7 @@ class FilesEventHandler(RegexMatchingEventHandler):
     def process(self, event):
         filename = os.path.splitext(event.src_path)[0]
         # extension = sys.argv[1] if len(sys.argv) > 1 else 'py'
-        extension = curr_extension.lower()
+        extension = allowed_extensions[curr_extension]['extension'].lower()
         filename = f"{filename}.{extension}"
         open(filename, 'a').close()
         print()
@@ -87,7 +87,7 @@ if __name__ == "__main__":
         "PY": {"extension": 'PY', "path": "Language_Proficiency\\Python"},
         "C": {"extension": 'C', "path": "Language_Proficiency\\C"},
         "CPP": {"extension": 'CPP', "path": "Language_Proficiency\\C++"},
-        "InterwPrep PY": {"extension": 'PY', "path": "Interview_Preparation"}
+        "INTPY": {"extension": 'PY', "path": "Interview_Preparation"}
     }
     print("Allowed extensions are:")
     [print(i) for i in allowed_extensions]
