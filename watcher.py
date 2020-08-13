@@ -1,10 +1,13 @@
 # Adapted from https://blog.magrathealabs.com/filesystem-events-monitoring-with-python-9f5329b651c3
 
-import sys, os, subprocess
+import sys
+import os
+import subprocess
 import time
 
 from watchdog.observers import Observer
 from watchdog.events import RegexMatchingEventHandler
+
 
 class FilesWatcher:
     def __init__(self, src_path):
@@ -14,7 +17,8 @@ class FilesWatcher:
 
     def run(self):
         self.start()
-        print(f"FilesWatcher is now running, will create {curr_extension.upper()} files.")
+        print(
+            f"FilesWatcher is now running, will create {curr_extension.upper()} files.")
         # print(f"FilesWatcher is now running, will create {sys.argv[1].upper()} files.")
         print("Press CTRL+C to terminate.")
         try:
@@ -39,6 +43,7 @@ class FilesWatcher:
             self.__src_path,
             recursive=True
         )
+
 
 class FilesEventHandler(RegexMatchingEventHandler):
     """Anytime a pdf is created in script's folder, create an empty file with the same name and given extension as CL argument"""
@@ -66,8 +71,10 @@ class FilesEventHandler(RegexMatchingEventHandler):
         open(filename, 'a').close()
         print()
         print(f"Created {filename}.")
-        subprocess.Popen(f"code -r {filename}" if editor == 1 else filename, shell=True)
- 
+        subprocess.Popen(
+            f"code -r {filename}" if editor == 1 else filename, shell=True)
+
+
 if __name__ == "__main__":
     # if len(sys.argv) == 1:
     #     print("Usage: watcher.py <extension> <optional_path>")
@@ -77,12 +84,15 @@ if __name__ == "__main__":
     os.system('cls' if os.name == 'nt' else 'clear')
     # Get required configuration
     allowed_extensions = {
-        "SQL" : {"extension" : 'SQL', "path": "Specialized_Skills\SQL"},
-        "PY" : {"extension" : 'PY', "path": "Language_Proficiency\Python"},
-        "C" : {"extension" : 'C', "path": "Language_Proficiency\C"},
-        "CPP" : {"extension" : 'CPP', "path": "Language_Proficiency\C++"}
+        "SQL": {"extension": 'SQL', "path": "Specialized_Skills\\SQL"},
+        "PY": {"extension": 'PY', "path": "Language_Proficiency\\Python"},
+        "C": {"extension": 'C', "path": "Language_Proficiency\\C"},
+        "CPP": {"extension": 'CPP', "path": "Language_Proficiency\\C++"},
+        "InterwPrep PY": {"extension": 'PY', "path": "Interview_Preparation"}
     }
-        
+    print("Allowed extensions are:")
+    [print(i) for i in allowed_extensions]
+    print()
     curr_extension = input("Enter extension: ").upper()
     # src_path = ('.' if src_path == "" else src_path)
     if curr_extension not in allowed_extensions:
@@ -93,7 +103,8 @@ if __name__ == "__main__":
         exit()
     else:
         src_path = allowed_extensions[curr_extension]["path"]
-    editor = int(input("Select Editor:\n[1]- VSCode\n[2]- Default System Editor\n> "))
+    editor = int(
+        input("Select Editor:\n[1]- VSCode\n[2]- Default System Editor\n> "))
 
     print("Launching Watcher...\n")
     FilesWatcher(src_path).run()
