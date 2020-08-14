@@ -102,8 +102,10 @@ if __name__ == "__main__":
         exit()
     else:
         src_path = allowed_extensions[curr_extension]["path"]
-    editor = int(
-        input("Select Editor:\n[1]- VSCode\n[2]- Default System Editor\n> "))
+    # Disabled to auto select vscode
+    # editor = int(
+        # input("Select Editor:\n[1]- VSCode\n[2]- Default System Editor\n> "))
+    editor = 1
 
     print("Launching Watcher...\n")
     FilesWatcher(src_path).run()
