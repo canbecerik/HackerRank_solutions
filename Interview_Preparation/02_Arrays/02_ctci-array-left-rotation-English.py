@@ -1,10 +1,10 @@
 #!/bin/python3
 
-import random
-import re
-import sys
+import os
 
 # Complete the rotLeft function below.
+
+
 def rotLeft(a, d):
     arrLen = len(a)
     # disregard unnecessary rotations
@@ -12,9 +12,11 @@ def rotLeft(a, d):
     toRotArray = a[:rotNum]
     newArr = a[len(toRotArray):]
     newArr.extend(toRotArray)
-    return newArr    
+    return newArr
+
 
 if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     nd = input().split()
 
@@ -25,6 +27,8 @@ if __name__ == '__main__':
     a = list(map(int, input().rstrip().split()))
 
     result = rotLeft(a, d)
-    # result = rotLeft([1, 2, 3, 4, 5], 4)
-    print(result)
 
+    fptr.write(' '.join(map(str, result)))
+    fptr.write('\n')
+
+    fptr.close()
