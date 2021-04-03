@@ -22,7 +22,7 @@ Challenge | Level | Stars | Progress
 10 Days of JavaScript | Gold | :star::star::star::star::star: | [Completed](https://github.com/canbecerik/HackerRank_solutions/blob/master/Tutorials/10_Days_of_Javascript)
 C | Silver | :star::star::star::star: | [16/25](https://github.com/canbecerik/HackerRank_solutions/blob/master/Language_Proficiency/C)
 C++ | Silver | :star::star::star: | [8/44](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/C%2B%2B)
-Interview Preparation Kit | N/A | | [12/69](https://github.com/canbecerik/HackerRank_solutions/tree/master/Interview_Preparation)
+Interview Preparation Kit | N/A | | [13/69](https://github.com/canbecerik/HackerRank_solutions/tree/master/Interview_Preparation)
 Python | Gold | :star::star::star::star::star: | [77/115](https://github.com/canbecerik/HackerRank_solutions/tree/master/Language_Proficiency/Python)
 SQL | Silver | :star::star::star::star: | [32/58](https://github.com/canbecerik/HackerRank_solutions/tree/master/Specialized_Skills/SQL)
 Problem Solving | Silver | :star::star::star | [4/563](https://github.com/canbecerik/HackerRank_solutions/tree/master/Problem_Solving)
