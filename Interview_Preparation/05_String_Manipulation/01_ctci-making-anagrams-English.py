@@ -21,16 +21,17 @@ def makeAnagram(a, b):
 
     return deletions
 
-def test():
+
+'''def test():
     a = 'cde'
     b = 'abc'
     print(f"{makeAnagram(a, b)}")
 
 test()
+'''
 
 
-
-'''if __name__ == '__main__':
+if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     a = input()
@@ -42,4 +43,3 @@ test()
     fptr.write(str(res) + '\n')
 
     fptr.close()
-'''
