@@ -5,34 +5,30 @@ import os
 import random
 import re
 import sys
-
+import collections
 # Complete the sherlockAndAnagrams function below.
 
 
 def sherlockAndAnagrams(s):
-    anagrams = []
-    # Get all substrings
-    substrings = [s[i:j]
-                  for i in range(len(s)) for j in range(i + 1, len(s) + 1)]
-    # Check if they are anagrams
-    for substring in substrings:
-        for i in range(len(substrings)):
-            if sorted(substrings[i]) == sorted(substring):
-                if substrings[i] != substring:
-                    anagrams.append(substring)
-                    anagrams.append(substrings[i])
+    anagram_dict = collections.defaultdict(int)
+    count = 0
+    for i in range(1, len(s)):
+        for j in range(len(s) - i + 1):
+            current_sorted = str(sorted(s[j:j + i]))
+            count += anagram_dict[current_sorted]
+            anagram_dict[current_sorted] += 1
+    return count
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+def test():
+    s = "kkkk"
+    print(f"{sherlockAndAnagrams(s)}")
+    s = "cdcd"
+    print(f"{sherlockAndAnagrams(s)}")
+    s = "abba"
+    print(f"{sherlockAndAnagrams(s)}")
+    s = "abcd"
+    print(f"{sherlockAndAnagrams(s)}")
 
-    q = int(input())
 
-    for q_itr in range(q):
-        s = input()
-
-        result = sherlockAndAnagrams(s)
-
-        fptr.write(str(result) + '\n')
-
-    fptr.close()
+test()
